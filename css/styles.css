@@ -1,3 +1,50 @@
 body {
-    background: #eee;
+    background: #333 url('/img/background.png');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+}
+
+.content {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 130px 0 0 30px;
+    max-width: 600px;
+}
+
+.content > * {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.content > .active {
+    opacity: 1;
+}
+
+.content h1 {
+    font-size: 36px;
+}
+
+.content h4 {
+    color: #ac4142;
+    font-size: 18px;
+}
+
+.content a {
+    color: initial;
+}
+
+.content .icons span {
+    font-size: 30px;
+    margin-right: 5px;
+    transition: color .15s linear;
+}
+
+.content .icons span:before {
+    margin: 0;
+}
+
+.content .icons span:hover {
+    color: #ac4142;
 }
